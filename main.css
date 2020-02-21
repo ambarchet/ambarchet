@@ -1,0 +1,132 @@
+body{
+    background-color: black;
+}
+.header{
+    border: 5px dashed red;
+    border-radius: 25px;
+}
+.firstName{
+    font-family: 'Modak', cursive;
+    font-size: 8em;
+    padding-left: 4rem;
+    color: blue;
+}
+.lastName{
+    font-family: 'Modak', cursive;
+    font-size: 8em;
+    padding-right: 4rem;
+    text-align: right;
+    color: blue;
+}
+.contactInfo{
+    font-family: 'Righteous', cursive;
+    padding: .5rem;
+    padding-left: 4rem;
+    color:green;
+}
+.navigation{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#aboutMeButton{
+    font-size: 2em;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color:black;}
+    20%  {background-color:yellow;}
+    40%  {background-color:black;}
+    60%  {background-color:black;}
+    80% {background-color:black;}
+    100% {background-color:black;}
+    }
+    
+#myProjectsButton{
+    font-size: 2em;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes example2 {
+    0%   {background-color:black;}
+    20%  {background-color:black;}
+    40%  {background-color:black;}
+    60%  {background-color:yellow;}
+    80% {background-color:black;}
+    100% {background-color:black;}
+}
+#contactMeButton{
+    font-size: 2em;
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes example3 {
+    0%   {background-color:black;}
+    20%  {background-color:black;}
+    40%  {background-color:black;}
+    60%  {background-color:black;}
+    80% {background-color:black;}
+    100% {background-color:yellow;}
+}
+#aboutMeModal{
+    background-color: black;
+}
+#myResume{
+    font-family: 'Righteous', cursive;
+    color: blue;
+}
+#myProjectsModal{
+    background-color: black;
+}
+#contactMeModal{
+    background-color: black;
+}
+#modalTitle{
+    font-family: 'Righteous', cursive;
+    color: blue;
+    font-weight: bold;
+}
+.carousel-caption{
+    color: lightslategray;
+    font-weight: bold;
+}
+.formLabels{
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    padding-top: .5rem;
+}
+.form-control{
+    width: 100%;
+    border-style: inset;
+    border-width: 2px;
+    border-color: lightslategrey;
+}
+#submitButton{
+    padding-top: .5rem;
+}
+.submitButton{
+    width: 100%;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    padding-top: .5rem;
+    padding-left: 4rem;
+    text-align: center;
+    width: 100%;
+    background-color: lightslategray;
+    padding: 5rem;
+}
+.social-media-icon{
+    color: blue;
+    font-size: 4.5em;
+    margin-top: 5rem;
+    text-align: center;
+}

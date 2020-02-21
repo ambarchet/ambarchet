@@ -4,18 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Aaron Barchet's Portfolio Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-</head>
-<body>
 
     
-
-
-
+</head>
+<body>
+        <p class="py-5 text-center">
+            <div class="container header">
+        <div class="row justify-content-front firstName">
+            <div class="col-6 Aaron">Aaron</div>
+        </div>
+        <div class="row justify-content-end lastName">
+            <div class="col-6 col-sm-auto Barchet">Barchet</div>
+        </div>
+        <div class="row justify-content-between contactInfo">
+            <div class="col"><h4>Indianapolis,IN | (812)204-7187 | AARON.BARCHET@GMAIL.COM</h4></div>
+        </div>
+    </div>
+    
+    <!--NAVIGATION-->
+    <div class="container navigation">
+        <div class="row justify-content-between buttonTopRow">
+            <!--About Me Button-->
+            <div class="col-4 buttonCol">
+                <button type="button" class="btn btn-outline-warning btn-rounded waves-effect" id="aboutMeButton" data-toggle="modal" data-target="#aboutMeModal">About Me
+                </button>
+            </div>
+            <!--My Projects Button-->
+            <div class="col-4 buttonCol">
+                <button type="button" class="btn btn-outline-warning btn-rounded waves-effect" id="myProjectsButton" data-toggle="modal" data-target="#myProjectsModal">My Projects
+                </button>
+            </div>
+        </div>
+        <!--Contact Me Button-->
+        <div class="row justify-content-center buttonBottomRow">
+            <div class="col-4 buttonCol">
+                <button type="button" class="btn btn-outline-warning btn-rounded waves-effect" id="contactMeButton" data-toggle="modal" data-target="#contactMeModal">Contact Me
+                </button>
+            </div>
+        </div>
+        
+        <!--MODALS-->
+        <!--About Me Modal-->
+        <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMeModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalTitle">About Me </h4>
+                    </div>
+                    <div class="modal-body">
+                        I have over 10 years experience as an Account Manager and Team Supervisor. I have a passion for problem solving. I love to learn how things work they way they do.
+                        <br>
+                        <h4>Skills:</h4>
+                        <ul>
+                            <li>C#</li>
+                            <li>HTML & CSS</li>
+                            <li>Git</li>
+                            <li>Visual Studio</li>
+                            <li>Agile</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        Core Values:
+                        <ul>
+                            <li>integrity</li>
+                            <li>Honesty</li>
+                            <li>Quality</li>
+                            <li>Accoutability</li>
+                            <li>Teamwork</li>
+                            <li>Enjoyment</li>
+                        </ul>
+                        <a id="myResume" href="https://docs.google.com/document/d/e/2PACX-1vQdtyaUe56Y9she3h7yoZydNn4C2rfo_tUe7nFgQBmn0YHClR_s80aU99bZQJxneRAGjvnnWnVmT-mp/pub" download target="blank">My Resume
+                          </a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-rounded" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--My Projects Modal-->
+    <div class="modal fade" id="myProjectsModal" tabindex="-1" role="dialog" aria-labelledby="myProjectsModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitle">My Projects </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://github.com/ambarchet/ConsoleGame" target="blank">
+                                    <img class="d-block w-100" src="assets/ConsoleGame.PNG" alt="Console Game Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Console Game</h5>
+                                        <p>Hangman console game built in C#.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://ambarchet.github.io/AaronStoreFront/" target="blank">
+                                    <img class="d-block w-100" src="assets/StoreFront.jpg" alt="Storefront Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Static Storefront</h5>
+                                        <p>Built with html and css.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://codepen.io/ambarchet/pen/yLyrEGW" target="blank">
+                                    <img class="d-block w-100" src="assets/Creature.PNG" alt="CSS Creature Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>CSS Creature</h5>
+                                        <p>Built with html and css.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://codepen.io/ambarchet/pen/pMENKv" target="blank">
+                                    <img class="d-block w-100" src="assets/UntitledPracticeWebsite.PNG" alt="Practice Webpage Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Practice Webpage</h5>
+                                        <p>Built with html and css.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://codepen.io/ambarchet/pen/abzMbOy/" target="blank">
+                                <img class="d-block w-100" src="assets/Map.PNG" alt="Map Page Slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Map Webpage</h5>
+                                    <p>Built with html and css.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-rounded" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Contact Me Modal-->
+<div class="modal fade" id="contactMeModal" tabindex="-1" role="dialog" aria-labelledby="contactMeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalTitle">Contact Me </h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row formLabels">
+                        <form id="contactform" action="https://formspree.io/mbjoepwn" method="POST">
+                            <input type="hidden" name="_subject" value="Portfolio Website Contact" />
+                            <label>Name</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="row formLabels">
+                            <label>Email</label>
+                        </div>
+                        <div class="row">
+                                <input type="email" class="form-control" name="_replyto" required placeholder="Your email">
+                            </div>
+                            <div class="row formLabels">
+                                <label>Message</label>
+                            </div>
+                            <div class="row">
+                                <textarea class="form-control" name="message" required placeholder="Your message"></textarea>
+                            </div>
+                            <div class="row" id="submitButton">
+                                <button type="submit" class=" submitButton btn btn-primary btn-rounded"value="Send">Send
+                                    <i class="fa fa-envelope-o"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-rounded" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    
+    <div class="container footer">
+        <div class="row justify-content-between align-items-end">
+            <a class=" col social-media-icon" href="https://github.com/ambarchet" target="blank" title="GitHub">
+                <i class="fa fa-github">
+                </i>   
+            </a>
+            <a class="col social-media-icon" href="https://codepen.io/ambarchet" target="blank" title="CodePen">
+                <i class="fa fa-codepen">
+                </i>   
+            </a>
+            <a class="col social-media-icon" href="https://www.linkedin.com/in/aaron-barchet-7985171a1/" target="blank" title="LinkedIn">
+                <i class="fa fa-linkedin-square">
+                </i>   
+            </a>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
