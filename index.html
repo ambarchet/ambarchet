@@ -13,13 +13,13 @@
     
 </head>
 <body>
-        <p class="py-5 text-center">
+       <!--<p class="py-5 text-center">-->
             <div class="container header">
         <div class="row justify-content-front firstName">
             <div class="col-6 Aaron">Aaron</div>
         </div>
         <div class="row justify-content-end lastName">
-            <div class="col-6 col-sm-auto Barchet">Barchet</div>
+            <div class="col-6 Barchet">Barchet</div>
         </div>
         <div class="row justify-content-between contactInfo">
             <div class="col"><h4>Indianapolis,IN | (812)204-7187 | AARON.BARCHET@GMAIL.COM</h4></div>
@@ -27,7 +27,7 @@
     </div>
     
     <!--NAVIGATION-->
-    <div class="container navigation">
+    <div class="container-fluid navigation">
         <div class="row justify-content-between buttonTopRow">
             <!--About Me Button-->
             <div class="col-4 buttonCol">
@@ -51,13 +51,14 @@
         <!--MODALS-->
         <!--About Me Modal-->
         <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMeModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="modalTitle">About Me </h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" id="modalBodyText">
                         I have over 10 years experience as an Account Manager and Team Supervisor. I have a passion for problem solving. I love to learn how things work they way they do.
+                        <br>
                         <br>
                         <h4>Skills:</h4>
                         <ul>
@@ -68,9 +69,9 @@
                             <li>Agile</li>
                             <li>Bootstrap</li>
                         </ul>
-                        Core Values:
+                        <h4>Core Values:</h4>
                         <ul>
-                            <li>integrity</li>
+                            <li>Integrity</li>
                             <li>Honesty</li>
                             <li>Quality</li>
                             <li>Accoutability</li>
@@ -105,6 +106,33 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                                <a href="https://github.com/ngahm/AuctionExpress" target="blank">
+                                    <img class="d-block w-100" src="assets/RedBadgeProject.PNG" alt="AuctionAPI Group Project Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Group Project: Auction API and MVC</h5>
+                                        <p>Built in C#.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://github.com/ngahm/TwentyFourHour" target="blank">
+                                    <img class="d-block w-100" src="assets/TwentyFourHour.PNG" alt="TwentyFourHour Group Project Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Group Project: 24-Hour API</h5>
+                                        <p>Built in C#.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://github.com/ambarchet/GoldBadgeProject" target="blank">
+                                    <img class="d-block w-100" src="assets/GoldBadgeProject.PNG" alt="Gold Badge Project Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Gold Badge Console App Project</h5>
+                                        <p>Built in C#.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
                                 <a href="https://github.com/ambarchet/ConsoleGame" target="blank">
                                     <img class="d-block w-100" src="assets/ConsoleGame.PNG" alt="Console Game Slide">
                                     <div class="carousel-caption d-none d-md-block">
@@ -213,7 +241,7 @@
     </div>
     <!--FOOTER-->
     
-    <div class="container footer">
+    <div class="container-fluid footer">
         <div class="row justify-content-between align-items-end">
             <a class=" col social-media-icon" href="https://github.com/ambarchet" target="blank" title="GitHub">
                 <i class="fa fa-github">
