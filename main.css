@@ -7,35 +7,70 @@ body{
 }
 .firstName{
     font-family: 'Modak', cursive;
-    font-size: 8em;
     padding-left: 4rem;
     color: blue;
 }
+    @media screen and (min-width: 601px) {
+        div.firstName {
+          font-size: 8rem;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        div.firstName {
+          font-size: 4rem;
+        }
+      }
 .lastName{
     font-family: 'Modak', cursive;
-    font-size: 8em;
     padding-right: 4rem;
     text-align: right;
     color: blue;
 }
+    @media screen and (min-width: 600px) {
+        div.lastName {
+          font-size: 8rem;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        div.lastName {
+          font-size: 4rem;
+        }
+      }
 .contactInfo{
     font-family: 'Righteous', cursive;
     padding: .5rem;
-    padding-left: 4rem;
+   /* padding-left: 4rem;*/
     color:green;
 }
+@media screen and (min-width: 600px) {
+    div.contactInfo {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.contactInfo {
+      font-size: 1rem;
+    }
+  }
+
 .navigation{
+    color: blue;
+    /*font-size: 4.5rem;*/
     margin-top: 5rem;
     text-align: center;
 }
 
 #aboutMeButton{
-    font-size: 2em;
+    font-size: 2.6vw;
     animation-name: example;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 @keyframes example {
     0%   {background-color:black;}
     20%  {background-color:yellow;}
@@ -43,10 +78,10 @@ body{
     60%  {background-color:black;}
     80% {background-color:black;}
     100% {background-color:black;}
-    }
+    }    
     
 #myProjectsButton{
-    font-size: 2em;
+    font-size: 2.6vw;
     animation-name: example2;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -60,8 +95,9 @@ body{
     80% {background-color:black;}
     100% {background-color:black;}
 }
+
 #contactMeButton{
-    font-size: 2em;
+    font-size: 2.6vw;
     animation-name: example3;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -75,8 +111,23 @@ body{
     80% {background-color:black;}
     100% {background-color:yellow;}
 }
+
 #aboutMeModal{
     background-color: black;
+    color: black;
+}
+#aboutMeBody{
+    text-align: left;
+}
+.aboutMeH4{
+    text-decoration: underline;
+
+}
+#skillsListItems{
+    text-align: left;
+}
+#coreValuesListItems{
+    text-align: left;
 }
 #myResume{
     font-family: 'Righteous', cursive;
@@ -118,7 +169,7 @@ body{
     position: absolute;
     bottom: 0;
     padding-top: .5rem;
-    padding-left: 4rem;
+    /*padding-left: 4rem;*/
     text-align: center;
     width: 100%;
     background-color: lightslategray;
@@ -126,7 +177,7 @@ body{
 }
 .social-media-icon{
     color: blue;
-    font-size: 4.5em;
+    font-size: 4rem;
     margin-top: 5rem;
     text-align: center;
 }
